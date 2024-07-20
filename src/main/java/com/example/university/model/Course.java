@@ -32,7 +32,7 @@ public class Course {
     public Course() {
     }
 
-    public Course(int courseId, String courseName,int credits, Professor professor, List<Student> students){
+    public Course(int courseId, String courseName, int credits, Professor professor, List<Student> students) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.credits = credits;
