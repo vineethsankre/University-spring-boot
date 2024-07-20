@@ -32,10 +32,12 @@ public class Course {
     public Course() {
     }
 
-    public Course(int courseId, String courseName, int credits) {
+    public Course(int courseId, String courseName,int credits, Professor professor, List<Student> students){
         this.courseId = courseId;
         this.courseName = courseName;
         this.credits = credits;
+        this.professor = professor;
+        this.students = students;
     }
 
     public int getCourseId() {

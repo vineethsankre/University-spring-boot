@@ -14,16 +14,16 @@ public class Professor {
     private int professorId;
 
     @Column(name = "name")
-    private String professorName;
+    private String name;
     @Column(name = "department")
     private String department;
 
     public Professor() {
     }
 
-    public Professor(int professorId, String professorName, String department) {
+    public Professor(int professorId, String name, String department) {
         this.professorId = professorId;
-        this.professorName = professorName;
+        this.name = name;
         this.department = department;
     }
 
@@ -35,12 +35,12 @@ public class Professor {
         this.professorId = professorId;
     }
 
-    public String getProfessorName() {
-        return professorName;
+    public String getname() {
+        return name;
     }
 
-    public void setProfessorName(String professorName) {
-        this.professorName = professorName;
+    public void setname(String name) {
+        this.name = name;
     }
 
     public String getDepartment() {

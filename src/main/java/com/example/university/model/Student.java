@@ -12,9 +12,9 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int studentId;
+    private int id;
     @Column(name = "name")
-    private String studentName;
+    private String name;
     @Column(name = "email")
     private String email;
 
@@ -26,26 +26,27 @@ public class Student {
 
     }
 
-    public Student(int studentId, String studentName, String email) {
-        this.studentId = studentId;
-        this.studentName = studentName;
+    public Student(int id, String name, String email, List<Course> courses) {
+        this.id = id;
+        this.name = name;
         this.email = email;
+        this.courses = courses;
     }
 
-    public int getStudentId() {
-        return studentId;
+    public int getid() {
+        return id;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setid(int id) {
+        this.id = id;
     }
 
-    public String getStudentName() {
-        return studentName;
+    public String getname() {
+        return name;
     }
 
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
+    public void setname(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
